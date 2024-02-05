@@ -18,7 +18,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Generate Date Tag
-        id: datetag
         run: echo "TAG=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
